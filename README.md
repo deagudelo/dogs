@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Dogs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that connects to [The Dog API](https://thedogapi.com/) and provides a clean card based interface with fuzzy search to browse through the different dog breeds this API gives access to.
 
-## Available Scripts
+It is currently hosted in [Cloudfront](https://d12497m5i8xtcl.cloudfront.net)
+
+
+## CRA Info:
+
+This was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
