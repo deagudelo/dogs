@@ -8,3 +8,8 @@ label {
   transform: translate(0, 1.5px) scale(0.75);
   transform-origin: top center !important;
 }
+
+.lazy-load-image-loaded {
+  width: 100%;
+  height: 100%
+}
