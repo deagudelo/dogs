@@ -1,16 +1,18 @@
-import "./custom.css"
+import "./custom.css";
 import WebFont from "webfontloader";
 
 import { Container, Grid, Typography, createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 import Content from "./Content";
 
+// Better font-loading performance
 WebFont.load({
   google: {
     families: ["Poppins:100,300,400,500", "sans-serif"],
   },
 });
 
+// Houm-like color palette
 const theme = createMuiTheme({
   typography: {
     fontFamily: "Poppins",
@@ -32,16 +34,6 @@ const theme = createMuiTheme({
       main: "#76A30F",
     },
   },
-  // palette: {
-  //   primary: {
-  //     // Purple and green play nicely together.
-  //     main: purple[500],
-  //   },
-  //   secondary: {
-  //     // This is green.A700 as hex.
-  //     main: "#11cb5f",
-  //   },
-  // },
 });
 
 function App() {
@@ -50,15 +42,11 @@ function App() {
       <Container>
         <Grid container spacing={5} justify="center">
           <Grid item container xs={12} justify="center">
-              <Typography
-                align="center"
-                color="secondary"
-                variant="h1"
-              >
-                Dogs
-              </Typography>
+            <Typography align="center" color="secondary" variant="h1">
+              Dogs
+            </Typography>
           </Grid>
-          <Content/>
+          <Content />
         </Grid>
       </Container>
     </ThemeProvider>
