@@ -1,8 +1,18 @@
 # Dogs
 
-This project is a web application that connects to [The Dog API](https://thedogapi.com/) and provides a clean card based interface with fuzzy search to browse through the different dog breeds this API gives access to.
+This project is a web application that connects to [The Dog API](https://thedogapi.com/) and provides a clean card based interface with fuzzy search to browse through the different (~172) dog breeds  this API gives access to.
+
 
 It is currently hosted in [Cloudfront](https://d12497m5i8xtcl.cloudfront.net)
+
+For the search feature, it uses [Fuse.js](https://fusejs.io/)
+
+UI library: [Material UI](https://material-ui.com/)
+
+## Performance boosts
+- AWS S3 + Cloudfront hosting (gzip and brotli compression, Edge Locations servers)
+- [React Lazy Loading Image Component](https://github.com/Aljullu/react-lazy-load-image-component) to only load images when they are visible
+- [Web Font Loader](https://developers.google.com/fonts/docs/webfont_loader) to lazy load Google hosted fonts.
 
 
 ## CRA Info:
