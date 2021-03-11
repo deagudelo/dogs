@@ -1,3 +1,4 @@
+import "./custom.css"
 import WebFont from "webfontloader";
 
 import { Container, Grid, Typography, createMuiTheme } from "@material-ui/core";
@@ -47,15 +48,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={5} justify="center">
           <Grid item container xs={12} justify="center">
-            <Typography
-              align="center"
-              color="secondary"
-              variant="h1"
-            >
-              Dogs
-            </Typography>
+              <Typography
+                align="center"
+                color="secondary"
+                variant="h1"
+              >
+                Dogs
+              </Typography>
           </Grid>
           <Content/>
         </Grid>
